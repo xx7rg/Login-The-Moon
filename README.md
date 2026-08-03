@@ -1,4 +1,4 @@
-# x7rG Login Experience
+# Login Experience by: x7rG
 
 > Uma missão além do login.
 
