@@ -1,4 +1,10 @@
+<div align="center">
+
+<img src="public/x7rg-enterprise-emblem.png" alt="Logo oficial x7rG Enterprise" width="140" />
+
 # Login Experience by: x7rG
+
+</div>
 
 > Uma missão além do login.
 
