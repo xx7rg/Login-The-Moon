@@ -62,7 +62,7 @@ stateDiagram-v2
 ## Arquitetura
 
 ```text
-x7rg-login-experience/
+Login-The-Moon/
 ├── .github/
 │   └── workflows/
 │       └── deploy-pages.yml
@@ -101,8 +101,8 @@ x7rg-login-experience/
 - navegador moderno com suporte à Web Audio API.
 
 ```bash
-git clone https://github.com/xx7rg/x7rg-login-experience.git
-cd x7rg-login-experience
+git clone https://github.com/xx7rg/Login-The-Moon.git
+cd Login-The-Moon
 npm install
 npm run dev
 ```
@@ -123,7 +123,7 @@ Abra o endereço exibido no terminal, normalmente [http://localhost:3000](http:/
 O workflow é executado automaticamente após cada `push` para a branch `main`. Durante a publicação, o projeto:
 
 1. instala as dependências com `npm ci`;
-2. define `/x7rg-login-experience` como caminho-base;
+2. define `/Login-The-Moon` como caminho-base;
 3. gera a exportação estática em `out/`;
 4. prepara o GitHub Pages;
 5. publica o artefato final.
