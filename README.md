@@ -153,7 +153,7 @@ Para uso em produção, seriam necessários backend de autenticação, comunica�
 
 ## Autoria
 
-Conceito, design e desenvolvimento por **x7rG Enterprise**.
+Desenvolvido por **x7rG Enterprise** — [@_7Ragnar](https://www.instagram.com/_7ragnar/) · [LinkedIn](https://www.linkedin.com/in/rgds/)
 
 ---
 
