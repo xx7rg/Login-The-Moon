@@ -5,13 +5,13 @@
 [![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=07101f)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-15d5ae?style=for-the-badge&logo=github)](https://xx7rg.github.io/x7rg-login-experience/)
+[![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-online-15d5ae?style=for-the-badge&logo=cloudflare)](https://login-the-moon-x7rg.contato-rgsantos.workers.dev)
 
 Uma experiência cinematográfica de autenticação criada pela **x7rG Enterprise**. O projeto transforma uma tela de login em uma pequena narrativa espacial, combinando interface, movimento, áudio procedural e ambientação visual em tempo real.
 
 ## Demonstração
 
-**Projeto online:** [xx7rg.github.io/x7rg-login-experience](https://xx7rg.github.io/x7rg-login-experience/)
+**Projeto online:** [login-the-moon-x7rg.contato-rgsantos.workers.dev](https://login-the-moon-x7rg.contato-rgsantos.workers.dev)
 
 ![Tela inicial do x7rG Login Experience](docs/images/01-login-inicial.png)
 
