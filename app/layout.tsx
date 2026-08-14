@@ -19,8 +19,8 @@ export const metadata: Metadata = {
   description:
     "Experiência cinematográfica de login em cenário lunar, criada pela x7rG Enterprise.",
   icons: {
-    icon: `${basePath}/favicon.svg`,
-    shortcut: `${basePath}/favicon.svg`,
+    icon: `${basePath}/favicon-x7rg.png`,
+    shortcut: `${basePath}/favicon-x7rg.png`,
   },
 };
 
