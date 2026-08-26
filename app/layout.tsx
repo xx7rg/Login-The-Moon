@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const siteUrl = "https://xx7g.github.io/Login-The-Moon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,13 +15,39 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const title = "x7rG Login Experience — Uma missão além do login";
+const description =
+  "Experiência cinematográfica de login em cenário lunar, criada pela x7rG Enterprise.";
+
 export const metadata: Metadata = {
-  title: "x7rG Login Experience — Uma missão além do login",
-  description:
-    "Experiência cinematográfica de login em cenário lunar, criada pela x7rG Enterprise.",
+  metadataBase: new URL(`${siteUrl}/`),
+  title,
+  description,
   icons: {
     icon: `${basePath}/favicon-x7rg.png`,
     shortcut: `${basePath}/favicon-x7rg.png`,
+  },
+  openGraph: {
+    title,
+    description,
+    url: `${siteUrl}/`,
+    siteName: "x7rG Enterprise",
+    locale: "pt_BR",
+    type: "website",
+    images: [
+      {
+        url: "/x7rg-enterprise-emblem.png",
+        width: 1024,
+        height: 1024,
+        alt: "x7rG Enterprise",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    images: ["/x7rg-enterprise-emblem.png"],
   },
 };
 
