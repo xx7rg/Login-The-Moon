@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const siteUrl = "https://xx7g.github.io/Login-The-Moon";
+const siteUrl = "https://xx7rg.github.io/Login-The-Moon";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
