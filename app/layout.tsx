@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/x7rg-enterprise-emblem.png",
-        width: 1024,
-        height: 1024,
+        url: "/favicon-x7rg.png",
+        width: 512,
+        height: 512,
         alt: "x7rG Enterprise",
       },
     ],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/x7rg-enterprise-emblem.png"],
+    images: ["/favicon-x7rg.png"],
   },
 };
 
