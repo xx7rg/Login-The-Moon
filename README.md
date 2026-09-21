@@ -157,10 +157,18 @@ Este repositório é uma **demonstração visual e educacional**. O formulário 
 
 Para uso em produção, seriam necessários backend de autenticação, comunicação HTTPS, tratamento de sessão, proteção contra abuso, recuperação segura de senha e validações no servidor.
 
-## Autoria
+---
 
-Desenvolvido por **x7rG Enterprise** — [@_7Ragnar](https://www.instagram.com/_7ragnar/) · [LinkedIn](https://www.linkedin.com/in/rgds/)
+<p align="center">Se esta experiência chamou sua atenção, deixe uma estrela no repositório. 🚀🌕</p>
 
 ---
 
-Se esta experiência chamou sua atenção, deixe uma estrela no repositório. 🚀🌕
+<div align="center">
+
+**© 2026 x7rG ENTERPRISE™** — Todos os direitos reservados.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rgds)
+&nbsp;
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://www.instagram.com/_7ragnar/)
+
+</div>
