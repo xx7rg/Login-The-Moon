@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Silhueta da bicicleta do botão "Sign in": imagem bmx.png fornecida por Rogério, usada sem alteração (ver README, "Procedência e uso de IA").
+// O recorte e as rodas giratórias em app/globals.css (.bike-reference-art, .bike-wheel-motion) foram medidos para este arquivo.
+const bicycleSilhouette = "/assets/bmx-silhouette.png";
+
 const title = "x7rG Login Experience — Uma missão além do login";
 const description =
   "Experiência cinematográfica de login em cenário lunar, criada pela x7rG Enterprise.";
@@ -72,7 +76,7 @@ export default function RootLayout({
           "--asset-caravan": `url("${basePath}/camel-caravan-realistic.png")`,
           "--asset-rover": `url("${basePath}/opportunity-rover.png")`,
           "--asset-lander": `url("${basePath}/lunar-lander-right-ridge.png")`,
-          "--asset-bicycle": `url("${basePath}/assets/et-bicycle-reference.png")`,
+          "--asset-bicycle": `url("${basePath}${bicycleSilhouette}")`,
         } as React.CSSProperties}
       >
         {children}

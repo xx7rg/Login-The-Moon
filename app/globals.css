@@ -960,6 +960,11 @@ button {
   padding-right: 36px !important;
 }
 
+/* O Edge desenha o próprio botão "mostrar senha"; o controle do projeto (.password-toggle) é o único que deve aparecer. */
+.password-field input::-ms-reveal {
+  display: none;
+}
+
 .password-toggle {
   position: absolute;
   right: 8px;
@@ -1191,7 +1196,7 @@ button {
   position: absolute;
   inset: 0;
   display: block;
-  background: var(--asset-bicycle) center / contain no-repeat;
+  background: var(--asset-bicycle) -4.25px 1.91px / 58.27px 47.56px no-repeat;
   filter:
     drop-shadow(0 1px 1px rgba(1, 5, 18, .62))
     drop-shadow(0 0 3px rgba(107, 110, 255, .62))
@@ -1201,8 +1206,8 @@ button {
 .bike-wheel-motion {
   position: absolute;
   z-index: 4;
-  top: 65.2%;
-  width: 29.7%;
+  top: 58.1%;
+  width: 32.5%;
   aspect-ratio: 1;
   border: 1px solid rgba(146, 153, 255, .72);
   border-radius: 50%;
@@ -1218,8 +1223,8 @@ button {
   box-shadow: 0 0 3px rgba(118, 113, 255, .55);
 }
 
-.bike-wheel-motion-rear { left: 2.6%; }
-.bike-wheel-motion-front { left: 68.1%; top: 62.2%; }
+.bike-wheel-motion-rear { left: 4.4%; }
+.bike-wheel-motion-front { left: 63.7%; top: 59.5%; }
 
 .bicycle-moon {
   position: absolute;
