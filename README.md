@@ -119,7 +119,7 @@ Login-The-Moon/
 ```bash
 git clone https://github.com/xx7rg/Login-The-Moon.git
 cd Login-The-Moon
-npm install
+npm ci
 npm run dev
 ```
 
@@ -131,8 +131,31 @@ Abra o endereço exibido no terminal, normalmente [http://localhost:3000](http:/
 | --- | --- |
 | `npm run dev` | inicia o ambiente local de desenvolvimento |
 | `npm run build` | gera a versão estática de produção em `out/` |
-| `npm run start` | inicia o servidor Next.js quando aplicável |
 | `npm run lint` | verifica a qualidade do código |
+
+### Prévia da versão de produção
+
+Este projeto usa `output: "export"`: o build gera arquivos estáticos em `out/`.
+Para conferir essa versão, execute os comandos abaixo na raiz do projeto.
+A prévia usa **Python 3**, além dos requisitos de desenvolvimento já listados.
+
+```bash
+npm run build
+python -m http.server 3000 --bind 127.0.0.1 --directory out
+```
+
+Abra [http://127.0.0.1:3000](http://127.0.0.1:3000). Encerre o servidor com
+`Ctrl+C`. Se o desenvolvimento estiver usando a porta 3000, encerre-o primeiro
+ou escolha outra porta para a prévia. Em sistemas onde o executável se chama
+`python3`, substitua `python` por `python3`.
+
+Para essa prévia local, deixe `NEXT_PUBLIC_BASE_PATH` sem definição ao gerar o
+build. O caminho-base usado pelo GitHub Pages é configurado separadamente no
+workflow de publicação.
+
+O script legado `npm run start` chama `next start`, que não serve projetos com
+`output: "export"`. Use `npm run dev` durante o desenvolvimento e o servidor
+estático acima para conferir o build de produção.
 
 ## Publicação no GitHub Pages
 
