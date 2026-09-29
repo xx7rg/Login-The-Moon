@@ -8,7 +8,7 @@
 
 > Uma missão além do login.
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.2.6-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.6-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=07101f)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Cloudflare Workers](https://img.shields.io/badge/Cloudflare%20Workers-online-15d5ae?style=for-the-badge&logo=cloudflare)](https://login-the-moon-x7rg.contato-rgsantos.workers.dev)
@@ -18,6 +18,8 @@ Uma experiência cinematográfica de autenticação publicada e mantida pela **x
 ## Demonstração
 
 **Projeto online:** [login-the-moon-x7rg.contato-rgsantos.workers.dev](https://login-the-moon-x7rg.contato-rgsantos.workers.dev)
+
+**Espelho no GitHub Pages:** [xx7rg.github.io/Login-The-Moon](https://xx7rg.github.io/Login-The-Moon/)
 
 ![Tela inicial do x7rG Login Experience](docs/images/01-login-inicial.png)
 
@@ -65,7 +67,8 @@ stateDiagram-v2
 | CSS | cenário, responsividade, efeitos e animações cinematográficas |
 | Web Audio API | síntese dos sons de ativação, movimento, motor e pouso |
 | GitHub Actions | automação da compilação e publicação |
-| GitHub Pages | hospedagem da demonstração pública |
+| Cloudflare Workers | hospedagem principal da demonstração pública |
+| GitHub Pages | publicação automática de um espelho estático |
 
 ## Arquitetura
 
@@ -132,6 +135,7 @@ Abra o endereço exibido no terminal, normalmente [http://localhost:3000](http:/
 | `npm run dev` | inicia o ambiente local de desenvolvimento |
 | `npm run build` | gera a versão estática de produção em `out/` |
 | `npm run lint` | verifica a qualidade do código |
+| `npm run typecheck` | valida os tipos TypeScript sem gerar arquivos |
 
 ### Prévia da versão de produção
 
@@ -153,9 +157,9 @@ Para essa prévia local, deixe `NEXT_PUBLIC_BASE_PATH` sem definição ao gerar 
 build. O caminho-base usado pelo GitHub Pages é configurado separadamente no
 workflow de publicação.
 
-O script legado `npm run start` chama `next start`, que não serve projetos com
-`output: "export"`. Use `npm run dev` durante o desenvolvimento e o servidor
-estático acima para conferir o build de produção.
+Como o projeto usa exportação estática, não há comando `npm run start`. Use
+`npm run dev` durante o desenvolvimento e o servidor estático acima para conferir
+o build de produção.
 
 ## Publicação no GitHub Pages
 
@@ -232,6 +236,10 @@ Para uso em produção, seriam necessários backend de autenticação, comunica�
 <div align="center">
 
 **Publicado e mantido por x7rG ENTERPRISE™.** Este repositório não define uma licença de uso. Materiais de terceiros, gerados com IA ou de origem não resolvida (veja [Procedência e uso de IA](#procedência-e-uso-de-ia)) não são cobertos por nenhuma declaração de direitos da x7rG.
+
+---
+
+© 2026 **x7rG ENTERPRISE™** — Todos os direitos reservados sobre o conteúdo autoral da x7rG.
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rgds)
 &nbsp;

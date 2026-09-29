@@ -1,19 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const siteUrl = "https://xx7rg.github.io/Login-The-Moon";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 // Silhueta da bicicleta do botão "Sign in": imagem bmx.png fornecida por Rogério, usada sem alteração (ver README, "Procedência e uso de IA").
 // O recorte e as rodas giratórias em app/globals.css (.bike-reference-art, .bike-wheel-motion) foram medidos para este arquivo.
@@ -40,7 +29,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/favicon-x7rg.png",
+        url: `${siteUrl}/favicon-x7rg.png`,
         width: 512,
         height: 512,
         alt: "x7rG Enterprise",
@@ -51,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/favicon-x7rg.png"],
+    images: [`${siteUrl}/favicon-x7rg.png`],
   },
 };
 
@@ -70,7 +59,6 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         style={{
           "--asset-landscape": `url("${basePath}/x7rg-lunar-landscape.png")`,
           "--asset-caravan": `url("${basePath}/camel-caravan-realistic.png")`,
