@@ -8,10 +8,11 @@
 
 > Uma missão além do login.
 
-[![Next.js](https://img.shields.io/badge/Next.js-16.3.6-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
+[![Next.js](https://img.shields.io/badge/Next.js-16.3.8-000000?style=for-the-badge&logo=nextdotjs)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2.6-61DAFB?style=for-the-badge&logo=react&logoColor=07101f)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-online-15d5ae?style=for-the-badge&logo=github)](https://xx7rg.github.io/Login-The-Moon/)
+[![CI](https://github.com/xx7rg/Login-The-Moon/actions/workflows/ci.yml/badge.svg)](https://github.com/xx7rg/Login-The-Moon/actions/workflows/ci.yml)
 
 Uma experiência cinematográfica de autenticação publicada e mantida pela **x7rG Enterprise**. O projeto transforma uma tela de login em uma pequena narrativa espacial, combinando interface, movimento, áudio procedural e ambientação visual em tempo real.
 
@@ -20,6 +21,19 @@ Uma experiência cinematográfica de autenticação publicada e mantida pela **x
 **Projeto online:** [xx7rg.github.io/Login-The-Moon](https://xx7rg.github.io/Login-The-Moon/)
 
 ![Tela inicial do x7rG Login Experience](docs/images/01-login-inicial.png)
+
+## Validação e segurança
+
+Execute `npm run lint`, `npm run build` e `npm run typecheck` para verificar o
+projeto. A CI também executa esses comandos nos pushes e pull requests.
+
+`npm run audit:dev` executa oito testes de segurança do patch local de `braces`
+e consulta a auditoria npm. Somente o aviso `GHSA-vfj7-8cjw-p6xm`, protegido
+pelo patch versionado, é reconhecido; qualquer outro aviso reprova a verificação.
+O registro npm continua identificando a versão original, sem reconhecer o patch.
+As dependências de produção são verificadas separadamente com
+`npm audit --omit=dev --audit-level high`. A instalação aplica o patch
+automaticamente e falha se ele não puder ser aplicado.
 
 ## Sobre a experiência
 
